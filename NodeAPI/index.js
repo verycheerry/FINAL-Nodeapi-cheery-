@@ -14,6 +14,6 @@ app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
 
-app.post('/order', (req, res) => {
+app.get('/order', (req, res) => {
     res.send('Order API working');
 });
