@@ -2,13 +2,6 @@ pipeline {
     agent { label 'MyAgent1' }
 
     stages {
-        stage('Clone Code') {
-            steps {
-                echo 'Cloning from GitHub'
-                git 'https://github.com/verycheerry/nodeapi-cheery.git'
-            }
-        }
-
         stage('Copy Files') {
             steps {
                 echo 'Copying files'
